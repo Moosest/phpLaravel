@@ -1,28 +1,16 @@
 <?php
 
-$books = [
-    [
-        'name' => 'Do Androids Dream of Electric Sheep',
-        'author' => 'Philip K. Dick',
-        'releaseYear' => 1968,
-        'purchaseUrl' => 'http://example.com'
-    ],
-    [
-        'name' => 'Project Hail Mary',
-        'author' => 'Andy Weir',
-        'releaseYear' => 2021,
-        'purchaseUrl' => 'http://example.com'
-    ],
-    [
-        'name' => 'The Martian',
-        'author' => 'Andy Weir',
-        'releaseYear' => 2011,
-        'purchaseUrl' => 'http://example.com'
-    ],
+$name = 'Laracasts';
+$cost = 15;
+
+$business = [
+    'name' => 'Laracasts',
+    'cost' => 15,
+    'categories' => ["Testing", "PHP", "JavaScript"]
 ];
 
-$filteredBooks = array_filter($books, function ($book) {
-    return $book['releaseYear'] >= 1950 && $book['releaseYear'] <= 2020;
-});
+function register($user) {
+
+}
 
 require "index.view.php";
